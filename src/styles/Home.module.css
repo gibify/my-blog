@@ -258,9 +258,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  /* .vercelLogo {
     filter: invert(1);
-  }
+  } */
 
   .logo,
   .thirteen img {
