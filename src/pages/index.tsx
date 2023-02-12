@@ -13,6 +13,11 @@ export default function Home() {
         <meta name="description" content="Evandro Gibicoski by gibify" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+        <script
+          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
+          crossOrigin="anonymous">
+        </script>
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
