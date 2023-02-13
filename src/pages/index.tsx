@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin, FaBlog } from 'react-icons/fa'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -61,7 +61,7 @@ export default function Home() {
             className={styles.card}
           >
             <h2 className={inter.className}>
-              Linkedin<span>-&gt;</span>
+              Linkedin
             </h2>
             <p className={inter.className}>
               <FaLinkedin />
@@ -75,9 +75,10 @@ export default function Home() {
             className={styles.card}
           >
             <h2 className={inter.className}>
-              Blog<span>-&gt;</span>
+              Blog
             </h2>
             <p className={inter.className}>
+              <FaBlog />
               Conteúdo sobre Tecnologia
             </p>
           </Link>
