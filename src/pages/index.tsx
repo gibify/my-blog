@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,10 +12,11 @@ export default function Home() {
     <>
       <Head>
         <title>gibify</title>
-        <meta name="description" content="Evandro Gibicoski by gibify" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Desenvolvedor Frontend - Netxjs, Reactjs, TypeScript, Javascript" />
+        <meta name="og:title" content="Desenvolvedor Frontend" />
+        <meta name="robots" content="software enginner, react enginner, next enginner, frontend" />
+        <meta name="og:url" content="https://www.gibicoski.com.br/" />
         <link rel="icon" href="/favicon.ico" />
-
         <script
           async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
           crossOrigin="anonymous">
@@ -27,6 +30,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaGithubSquare color='#FFFFFF' size={24} />
               <code className={styles.code}>https://github.com/gibify</code>
             </a>
           </p>
@@ -52,19 +56,31 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="https://parallel-broker-b39.notion.site/Controlled-and-Uncontrolled-Components-918dc4ae9aca4b978e70577fb0eda1f9"
+          <Link
+            href="/https://www.linkedin.com/in/gibifyofficial/"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              React-JS <span>-&gt;</span>
+              Linkedin<span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Controlled and Uncontrolled Components
+              <FaLinkedin />
+              gibifyofficial
             </p>
-          </a>
+          </Link>
+        </div>
+        <div className={styles.grid}>
+          <Link
+            href="/blog"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Blog<span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Conteúdo sobre Tecnologia
+            </p>
+          </Link>
         </div>
       </main>
     </>

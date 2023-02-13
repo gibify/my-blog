@@ -7,6 +7,17 @@
   min-height: 100vh;
 }
 
+.header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: var(--max-width);
+  max-width: '100%';
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -17,6 +28,8 @@
   z-index: 2;
   font-family: var(--font-mono);
 }
+
+
 
 .description a {
   display: flex;
@@ -65,11 +78,17 @@
 }
 
 .card p {
+  display: flex;
+  align-items: center;
   margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+}
+
+.card svg {
+  margin-right: 8px;
 }
 
 .center {
