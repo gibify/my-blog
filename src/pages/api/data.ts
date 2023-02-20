@@ -10,6 +10,10 @@ const data: Data[] = [
   {
     name: 'Linkedin',
     url: 'https://www.linkedin.com/in/gibifyofficial/',
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/gibifyofficial/',
   }
 ]
 
