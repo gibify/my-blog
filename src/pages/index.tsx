@@ -1,25 +1,32 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+import useGAEventsTracker from "@/hooks/useGAEventsTracker"
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { FaGithubSquare, FaLinkedin, FaBlog, FaTwitter } from 'react-icons/fa'
-import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const GAEvent = useGAEventsTracker('Social Media')
+
+  const handleLinkedinGAEvent = () => {
+    GAEvent.eventTracker('click_on_linkedin')
+  }
+
   return (
     <>
       <Head>
-        <title>gibify</title>
-        <meta name="description" content="Desenvolvedor Frontend - Netxjs, Reactjs, TypeScript, Javascript" />
+        <title>Gibify | Home</title>
+        <meta name="description" content="Desenvolvedor Frontend - Netxjs, Reactjs, TypeScript, Javascript, Electronjs" />
         <meta name="og:title" content="Desenvolvedor Frontend" />
-        <meta name="robots" content="software enginner, react enginner, next enginner, frontend" />
-        <meta name="og:url" content="https://www.gibicoski.com.br/" />
+        <meta name="robots" content="software enginner, react enginner, next enginner, frontend enginner, frontend" />
+        <meta name="og:url" content="https://www.gibify.dev/" />
         <link rel="icon" href="/favicon.ico" />
-        <script
-          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
-          crossOrigin="anonymous">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
+          crossOrigin="anonymous"
+        >
         </script>
       </Head>
       <main className={styles.main}>
@@ -57,6 +64,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link
+            onClick={handleLinkedinGAEvent}
             href="https://www.linkedin.com/in/gibifyofficial/"
             className={styles.card}
             target="_blank"
