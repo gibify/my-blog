@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-PN4S4WTPE8', {
+          'debug_view': true,
           page_path: window.location.pathname,
         });
         `}
