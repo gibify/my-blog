@@ -48,7 +48,7 @@ export default function Blog() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              MKT <span>-&gt;</span>
+              MKT & Sales <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Leads, Prospects e Customers.
