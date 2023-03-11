@@ -10,12 +10,12 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>gibify</title>
+        <title>Gibify | Blog</title>
         <meta name="description" content="Learn about React Controlled Components and how they work in React applications." />
+        <meta name="description" content="O que é leads, prospects e customers e que significa esses termos?" />
         <meta name="og:title" content="Controlled and Uncontrolled Components in React" />
-        <meta name="" content="Controlled-and-Uncontrolled-Components in React" />
-        <meta name="" content="Controlled-and-Uncontrolled-Components in React" />
-        <meta name="og:url" content="https://www.gibicoski.com.br/" />
+        <meta name="og:title" content="Leads, Prospects, Customers." />
+        <meta name="og:url" content="https://www.gibify.dev/" />
         <script
           async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
           crossOrigin="anonymous">
@@ -35,10 +35,23 @@ export default function Blog() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              React-JS <span>-&gt;</span>
+              React <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Controlled and Uncontrolled Components
+            </p>
+          </a>
+          <a
+            href="https://www.notion.so/Leads-Prospects-Customers-2aa51863e47d4dd8b714e4345e3ba63a?pvs=4"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              MKT <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Leads, Prospects e Customers.
             </p>
           </a>
         </div>
