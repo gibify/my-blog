@@ -16,10 +16,6 @@ export default function Blog() {
         <meta name="og:title" content="Controlled and Uncontrolled Components in React" />
         <meta name="og:title" content="Leads, Prospects, Customers." />
         <meta name="og:url" content="https://www.gibify.dev/" />
-        <script
-          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
-          crossOrigin="anonymous">
-        </script>
       </Head>
       <header className={styles.header}>
         <Link href="/" className={inter.className}>

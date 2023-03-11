@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
 import useGAEventsTracker from "@/hooks/useGAEventsTracker"
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import { FaGithubSquare, FaLinkedin, FaBlog, FaTwitter } from 'react-icons/fa'
+import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,11 +25,14 @@ export default function Home() {
         <meta name="robots" content="software enginner, react enginner, next enginner, frontend enginner, frontend" />
         <meta name="og:url" content="https://www.gibify.dev/" />
         <link rel="icon" href="/favicon.ico" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
-          crossOrigin="anonymous"
-        >
-        </script>
       </Head>
+      <Script
+        id='ads'
+        async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394287397785778"
+        crossOrigin="anonymous"
+        strategy="lazyOnload"
+      >
+      </Script>
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
